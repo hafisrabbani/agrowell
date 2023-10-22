@@ -1,90 +1,541 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <!-- Required meta tags -->
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
- <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
-  
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="public/style.css">
-    <!-- <link rel="stylesheet" href="public/home.css"> -->
+    <link rel="stylesheet" href="public/btn.js">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <!-- <link href="lib/slick/slick.css" rel="stylesheet"> -->
-    <!-- <link href="lib/slick/slick-theme.css" rel="stylesheet"> -->
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Home</title>
+    
+  </head>
+  <body>
 
-<style>
-  .what {
-    padding-top: 8%;
-  }
-  .text-content, p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-</style>
+        <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+          <i class="fa-solid fa-arrow-up fa-xl"></i>
+        </button>
 
-<body>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            <a class="navbar-brand" href="#" style="color: #4F6458; ">AgroWell.</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="about.html">About Us</a>
+                  </div>
+                </div>
+              </div>
+            </nav>
 
-  <div class="container text-center what">
-    <div class="row">
-      <div class="col">
-        <img src="public/img/5115f33e7bb37c67bd08bf72a50527b9-removebg-preview 1.png" alt="">
-      </div>
-      <div class="col text-start">
-          <div class="text-content">
-            <h2>WHAT IS</h2>
-            <h2>SUSTAINABLE AGRICULTURE</h2>
-          </div>
-            <p>Pertanian berkelanjutan adalah pendekatan pertanian yang bertujuan 
-              untuk mempertahankan produktivitas tanah dan sumber daya alam sambil 
-              mengurangi dampak negatif terhadap lingkungan, sosial, dan ekonomi. 
-              Tujuan pertanian berkelanjutan adalah untuk memastikan bahwa pertanian 
-              dapat berlanjut dalam jangka panjang tanpa mengganggu ekosistem dan 
-              memenuhi kebutuhan generasi saat ini dan mendatang.</p>
-          <div class="text-content mt-3">
-            <h2>TECH IN AGRICULTURE</h2>
-          </div>
-          <a href="#" class="custom-button">GO TO THE SECTION</a>
-
-          <!-- <div class="button-container mb-5">
-            <a href="">
-              <div class="button-background"></div>
-              <div class="button-text">GO TO THE SECTION</div>
-            </a>
-          </div> -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container mt-5">
+          <div class="jumbotron" >
+            <div class="container mt-4" data-aos="fade-right" data-aos-duration="700" style="margin-left: 3.5%;">
+              <h1 class="display-4">WORLD<br>
+                <div class="row ml-1">
+                  OF&nbsp;<span class="trns-text">SUSTAINABLE</span>
+                </div>
+                AGRICULTURE
+              </h1>
+                <div class="horizontal-line"></div>
+                  <div class="row">
+                    <div class="text-layer ml-3">
+                      <p class="mt-2">PRECISION AGRICULTURE</p>
+                      <p style="margin-top: -3%;">VERTICAL AND INDOOR AGRICULTURE</p>
+                    </div>
+                    <div class="row tech">
+                      <p class="mt-2">AI&nbsp;</p>
+                      <p class="mt-2">IOT&nbsp;</p>
+                      <p class="mt-2">ROBOT&nbsp;</p>
+                      <p class="mt-2">DRONE</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="row" style="margin-top: -4%;">
+              <div class="col-md-6 col-sm-12" data-aos="fade-right" data-aos-duration="1000">
+                  <img src="public/img/smart.0" alt="" class="img-fluid" style="width: 100%;">
+              </div>
+                <div class="col-md-6 col-sm-12" data-aos="fade-left" data-aos-duration="1000">
+                  <div class="card" style="background-color: #d8e3d9 ; padding: 6%; height: 83.5%; margin-bottom: 55px;">
+                    <div class="text-content">
+                        <h2>Apa itu Sustainable Agriculture?</h2>
+                    </div>
+                    <p class="mt-2" style="color: #4F6458;">
+                      Usaha pertanian yang memanfaatkan dan juga melestarikan sumberdaya secara optimal guna menghasilkan produk 
+                      panen secara optimal yang mampu memenuhi kriteria sosial, ekonomi 
+                      dan kelestarian lingkungan, serta menggunakan sarana produksi yang terbarukan.
+                    </p>
+                    <div class="text-content mb-5 mt-4">
+                      <h2>Teknologi Pertanian</h2>
+                      <button type="button" class="btn" onclick="scrollToSmoothly()" id="btn">Go To The Section &nbsp; <i class="fa-solid fa-caret-right fa-lg"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+    <div class="container">
       <div class="row">
-        <div class="col-5">
-          <h2>WORLD OF SUSTAINABLE AGRICULTURE</h2>
-        </div>
-        <div class="col-7">
-          <div class="vertical-line"></div>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-            Pariatur quam magnam, fugiat illo ipsa, impedit quaerat dolore 
-            itaque quos saepe adipisci voluptatibus minima, nobis nisi et 
-            sapiente nemo dolor molestias.</p>
-        </div>
-      </div>
-    </div>
-
-  <!-- <div class="row">
-    <div class="col-4">
-      <div class="card1-event">
-        <div class="card card-style bg-primary">
-          <div class="card-cover cover1">
-            <img src="public/img/Drone  Pertanian Dji  Agras T20.jpg" style="width: 330px;">
-          </div>
-            <div class="card-content">
-              <h3>Vaksin Covid-19</h3>
-              <p>Program vaksinasi terus gencar dilaksanakan di Kabupaten Trenggalek. Kali ini, Senin (2/8/2021) vaksinasi menyasar pelajar usia 12 hingga 17 tahun yang berlangsung di MTsN 1 Trenggalek dan Ponpes Qomarul Hidayah Tugu.</p>
+          <div class="col-lg-8 offset-lg-2 text-center">
+            <div class="text-content">
+              <h2 >TEKNOLOGI PERTANIAN</h2>
             </div>
           </div>
         </div>
+        <div class="row cd" style="margin-top: -3%;">
+          <div class="col-lg-4 col-md-4" data-aos="zoom-in-up" data-aos-duration="650">
+            <div class="card1-event">
+              <div class="card card-style crd">
+                <div class="card-cover cover1">
+                  <img src="public/img/seen.jpeg" style="width: 330px;" alt="Robot with Sensor">
+                </div>
+                  <div class="card-content mt-4" style="color: #3A4C3F;">
+                    <h3>Teknologi Sensor & GPS</h3>
+                    <p>Teknologi pertanian presisi menggunakan sensor, GPS, dan perangkat lunak untuk memaksimalkan 
+                      penggunaan sumber daya di ladang untuk tujuan seperti pemupukan yang tepat, irigasi, dan pemantauan tanaman.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="col-lg-4 col-md-4" data-aos="zoom-in-up" data-aos-duration="650">
+                <div class="card1-event">
+                  <div class="card card-style crd">
+                      <div class="card-cover cover1">
+                        <img src="public/img/iot.png" style="width: 330px;">
+                      </div>
+                        <div class="card-content mt-4" style="color: #3A4C3F;">
+                          <h3>Pertanian Berbasis IoT</h3>
+                          <p>IoT memungkinkan petani untuk memantau kondisi pertanian secara real-time. Sensor tanah, cuaca,
+                            dan hama dapat memberikan data yang akurat untuk mengambil keputusan terbaik dan mengurangi resiko.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4" data-aos="zoom-in-up" data-aos-duration="650">
+                    <div class="card1-event">
+                      <div class="card card-style crd">
+                        <div class="card-cover cover1">
+                          <img src="public/img/drone.jpeg" style="width: 330px;">
+                        </div>
+                        <div class="card-content mt-4" style="color: #3A4C3F;">
+                          <h3>Penggunaan Drone</h3>
+                          <p>Drone digunakan untuk pemantauan lahan pertanian. Mereka dapat memetakan tanaman, mengidentifikasi masalah pertanian, 
+                            dan bahkan membantu dalam penyemprotan pestisida. 
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row cd" style="margin-top: -5%;">
+                  <div class="col-lg-4 col-md-4" data-aos="zoom-in-up" data-aos-duration="650">
+                    <div class="card1-event">
+                      <div class="card card-style crd">
+                        <div class="card-cover cover1">
+                          <img src="public/img/ver.jpeg" style="width: 330px;" alt="Robot with Sensor">
+                        </div>
+                          <div class="card-content mt-4" style="color: #3A4C3F;">
+                            <h3>Vertical & Indoor</h3>
+                            <p>Pertanian vertikal dan dalam ruangan menumbuhkan tanaman di dalam ruang terkontrol. 
+                              Mengurangi penggunaan lahan dan memungkinkan produksi sepanjang tahun.
+                              Metode ini menggunakan LED & sistem hidroponik.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4" data-aos="zoom-in-up" data-aos-duration="650">
+                      <div class="card1-event">
+                        <div class="card card-style crd">
+                          <div class="card-cover cover1">
+                            <img src="public/img/robot.png" style="width: 330px;">
+                          </div>
+                            <div class="card-content mt-4" style="color: #3A4C3F;">
+                              <h3>Pertanian Berbasis Robot</h3>
+                              <p>Robot pertanian semakin populer. Robot ini mampu mengoptimalkan produksi dengan memantau kondisi tanah, 
+                                pertumbuhan tanaman, dan memberikan data yang mendetail untuk pengambilan keputusan yang lebih cerdas.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4" data-aos="zoom-in-up" data-aos-duration="650">
+                      <div class="card1-event">
+                        <div class="card card-style crd">
+                          <div class="card-cover cover1">
+                            <img src="public/img/ai.png" style="width: 330px;">
+                          </div>
+                          <div class="card-content mt-4" style="color: #3A4C3F;">
+                            <h3>Artificial Intelligence</h3>
+                            <p>AI dapat mengidentifikasi hama dan penyakit tanaman dengan cepat melalui analisis gambar dan memberikan rekomendasi pengendalian yang tepat.
+                              AI juga dapat menganalisis tren pasar, permintaan, dan harga komoditas pertanian.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+
+    <div class="container" id="tech" style="margin-bottom: 5%; margin-top: 3%;">
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <div class="text-content mt-3">
+              <h4>TEKNOLOGI PERTANIAN DI INDONESIA</h4>
+            </div>
+          <div class="horizontal mt-3 mb-2"></div>
+        </div>
+          <div class="col-md-8 col-sm-12" style="display: flex; align-items: center;">
+            <div class="vertical-line"></div>
+            <p>Pertanian Indonesia telah maju berkat teknologi modern seperti irigasi tetes dan 
+              pemantauan real-time yang didukung oleh sistem informasi geografis dan analisa data. 
+              Teknologi ini membantu petani mengelola lahan dengan lebih baik dan meningkatkan produktivitas pertanian secara keseluruhan.
+            </p>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 5%;">
+          <div class="col" data-aos="zoom-in-right" data-aos-duration="650">
+            <div class="card mb-3 cad" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-5" style="padding: 14px;">
+                  <img src="public/img/pertanianterpadu.jpeg" class="card-img" alt="" height="99%" width="99%" style="border-radius: 10%;">
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <h5 class="card-title">Sistem Pertanian Terpadu di Desa Tegalrejo, Jawa Tengah</h5>
+                    <p class="card-text">Mengintegrasikan budidaya ikan lele dengan....
+                    </p>
+                    <a href="" class="float-right mb-2 text-dark text-decoration-none" data-toggle="modal" data-target="#SistemPertanian">Read More...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" data-aos="zoom-in-left" data-aos-duration="650">
+              <div class="card mb-3 cad" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-5" style="padding: 14px;">
+                    <img src="public/img/varietasunggul.jpeg" class="card-img" alt="" height="99%" width="99%" style="border-radius: 10%;">
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h5 class="card-title">Varietas Unggul Padi di Subang, Jawa Barat</h5>
+                      <p class="card-text">Penggunaan varietas unggul padi seperti Ciherang dan Inpari42....</p>
+                      <a href="" class="float-right mb-2 text-dark text-decoration-none" data-toggle="modal" data-target="#varietas">Read More...</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="row mt-2">
+          <div class="col" data-aos="zoom-in-right" data-aos-duration="650">
+            <div class="card mb-3 cad" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-5" style="padding: 14px;">
+                  <img src="public/img/smart_irigation.jpeg" class="card-img" alt="" height="99%" width="99%" style="border-radius: 10%;">
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <h5 class="card-title">Teknologi Irigasi di Nusa Tenggara Timur</h5>
+                    <p class="card-text">Menerapkan sistem irigasi untuk memastikan penggunaan air....</p>
+                    <a href="" class="float-right mb-2 text-dark text-decoration-none" data-toggle="modal" data-target="#irigasi">Read More...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" data-aos="zoom-in-left" data-aos-duration="650">
+              <div class="card mb-3 cad" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-5" style="padding: 14px;">
+                    <img src="public/img/vertikal.jpeg" class="card-img" alt="" height="99%" width="99%" style="border-radius: 10%;">
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <h5 class="card-title">Teknologi Tanam Vertikal di Jakarta</h5>
+                      <p class="card-text">Sistem tanam vertikal untuk mengoptimalkan...</p>
+                      <a href="" class="float-right mb-2 text-dark text-decoration-none" data-toggle="modal" data-target="#vertikal">Read More...</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="row mb-4 manfaat">
+            <div class="col-md-5 col-sm-12" data-aos="zoom-out-up" data-aos-duration="650"> 
+              <img src="public/img/ekosistem.png" alt="" width="100%">
+            </div>
+            <div class="col-md-7 col-sm-12">
+              <div class="text-content mb-4">
+                <h2>Manfaat Sustainable Agriculture</h2>
+              </div>
+              <div class="accordion" id="exampleAccordion">
+                <div class="card">
+                  <div class="card-header" id="exItem1Header">
+                    <h5 class="mb-0">
+                      <div class="row">
+                        <div class="col-md-11 col-sm-6">
+                          <a data-toggle="collapse" data-target="#exItem1" aria-expanded="false" aria-controls="exItem1">1. Peningkatan Produktivitas</a>
+                        </div>
+                        <div class="col-md-1 col-sm-6">
+                          <a href="#" class="text-dark" data-toggle="collapse" data-target="#exItem1" aria-expanded="false" aria-controls="exItem1" onclick="changeIcon('icon1', event)"><i id="icon1" class="fa-solid fa-caret-down"></i></a>
+                        </div>
+                      </div>
+                    </h5>
+                  </div>
+                  <div id="exItem1" class="collapse" aria-labelledby="exItem1Header" data-parent="#exampleAccordion">
+                    <div class="card-body">Teknologi ini memungkinkan pertanian yang lebih efisien dan produktif, menghasilkan hasil yang lebih besar dari lahan yang sama.</div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="exItem2Header">
+                    <h5 class="mb-0">
+                      <div class="row">
+                        <div class="col-md-11">
+                          <a data-toggle="collapse" data-target="#exItem2" aria-expanded="false" aria-controls="exItem2">2. Penghematan Sumber Daya</a>
+                        </div>
+                        <div class="col-md-1"><a href="#" class="text-dark" data-toggle="collapse" data-target="#exItem2" aria-expanded="false" aria-controls="exItem2" onclick="changeIcon('icon2', event)"><i id="icon2" class="fa-solid fa-caret-down"></i></a>
+                        </div>
+                      </div>
+                    </h5>
+                  </div>
+                  <div id="exItem2" class="collapse" aria-labelledby="exItem2Header" data-parent="#exampleAccordion">
+                    <div class="card-body">Dengan menggunakan sumber daya seperti air dan pupuk secara lebih efisien, teknologi ini membantu mengurangi dampak lingkungan pertanian.</div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="exItem3Header">
+                    <h5 class="mb-0">
+                      <div class="row">
+                        <div class="col-md-11">
+                          <a data-toggle="collapse" data-target="#exItem3" aria-expanded="false" aria-controls="exItem3">3. Pemantauan Real-Time</a>
+                        </div>
+                        <div class="col-md-1">
+                          <a href="#" class="text-dark" data-toggle="collapse" data-target="#exItem3" aria-expanded="false" aria-controls="exItem3" onclick="changeIcon('icon3', event)"><i id="icon3" class="fa-solid fa-caret-down"></i></a>
+                        </div>
+                      </div>
+                    </h5>
+                  </div>
+                  <div id="exItem3" class="collapse" aria-labelledby="exItem3Header" data-parent="#exampleAccordion">
+                    <div class="card-body">Petani dapat memantau kondisi lapangan secara real-time, sehingga dapat mengambil tindakan lebih cepat untuk mengatasi masalah seperti hama atau penyakit.</div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="exItem4Header">
+                    <h5 class="mb-0">
+                      <div class="row">
+                        <div class="col-md-11">
+                          <a data-toggle="collapse" data-target="#exItem4" aria-expanded="false" aria-controls="exItem4">4. Ketahanan Terhadap Perubahan Iklim</a>
+                        </div>
+                        <div class="col-md-1">
+                          <a href="#" class="text-dark" data-toggle="collapse" data-target="#exItem4" aria-expanded="false" aria-controls="exItem4" onclick="changeIcon('icon4', event)"><i id="icon4" class="fa-solid fa-caret-down"></i></a>
+                        </div>
+                      </div>
+                    </h5>
+                  </div>
+                  <div id="exItem4" class="collapse" aria-labelledby="exItem4Header" data-parent="#exampleAccordion">
+                    <div class="card-body">Dengan menggunakan praktik-praktik yang ramah lingkungan, pertanian berkelanjutan dapat membantu mengurangi emisi gas rumah kaca, memitigasi perubahan iklim, dan meningkatkan ketahanan terhadap perubahan iklim yang merugikan</div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="exItem4Header">
+                    <h5 class="mb-0">
+                      <div class="row">
+                        <div class="col-md-11">
+                          <a data-toggle="collapse" data-target="#exItem5" aria-expanded="false" aria-controls="exItem5">5. Keamanan Pangan Jangka Panjang</a>
+                        </div>
+                        <div class="col-md-1">
+                          <a href="#" class="text-dark" data-toggle="collapse" data-target="#exItem5" aria-expanded="false" aria-controls="exItem5" onclick="changeIcon('icon5', event)"><i id="icon5" class="fa-solid fa-caret-down"></i></a>
+                        </div>
+                      </div>
+                    </h5>
+                  </div>
+                  <div id="exItem5" class="collapse" aria-labelledby="exItem5Header" data-parent="#exampleAccordion">
+                    <div class="card-body">Dengan mempertahankan kualitas tanah dan air, pertanian berkelanjutan dapat mendukung produksi pangan yang berkelanjutan dalam jangka panjang. Ini penting untuk memastikan keberlanjutan pasokan pangan di masa depan.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        <div class="footer-bottom text-center">
+          <div class="row">
+            <div class="col-md-7">
+              <p class="ml-5">By SOFT WISPER Team</p>
+            </div>
+            <div class="col-md-5 foot">
+              <p style="margin-left: -130%;">Copyright &copy; 2023 <a href="#" class="text-decoration-none" style="color: #4F6458;">AgroWell.</a>. All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+
+    <!-- Modal Sistem Pertanian -->
+    <div class="modal fade" id="SistemPertanian" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Sistem Pertanian Terpadu</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="display: flex; flex-direction: column; align-items: center;">
+            <img src="public/img/pertanianterpadu.jpeg" alt="" width="50%" style="margin: 0 auto; border-radius: 10%;">
+            <p class="mt-3">Mengintegrasikan budidaya ikan lele dengan pertanian padi dan sayuran untuk menciptakan pola produksi yang berkelanjutan dan efisien secara ekonomi</p>
+          </div>
+        </div>
       </div>
-    </div>   -->
-</body>
+    </div>
+
+    <!-- Modal Varietas Tumbuhan -->
+    <div class="modal fade" id="varietas" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Varietas Unggul Padi</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="display: flex; flex-direction: column; align-items: center;">
+            <img src="public/img/varietasunggul.jpeg" alt="" width="50%" style="margin: 0 auto; border-radius: 10%;">
+            <p class="mt-3">Penggunaan Varietas Unggul padi seperti Ciherang dan Inpari42 untuk meningkatkan produktivitas dan ketahanan tanaman padi terhadap penyakit dan kondisi lingkungan yang beragam.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Irigasi -->
+    <div class="modal fade" id="irigasi" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Teknologi Irigasi di NTT</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="display: flex; flex-direction: column; align-items: center;">
+            <img src="public/img/smart_irigation.jpeg" alt="" width="50%" height="40%" style="margin: 0 auto; border-radius: 10%;">
+            <p class="mt-3">Menerapkan sistem irigasi untuk memastikan penggunaan air yang efisien dan terukur dalam budidaya tanaman perkebunan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Vertikal and Indoor -->
+    <div class="modal fade" id="vertikal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Teknologi Tanam Vertikal di Jakarta</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="display: flex; flex-direction: column; align-items: center;">
+            <img src="public/img/vertikal.jpeg" alt="" width="50%" style="margin: 0 auto; border-radius: 10%;">
+            <p class="mt-3">Menggunakan sistem tanam vertikal untuk mengoptimalkan penggunaan lahan dan memproduksi sayuran di lingkungan perkotaan yang padat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        function changeIcon(iconId, event) {
+        event.preventDefault();
+        let icon = document.getElementById(iconId);
+        if (icon) {
+          if (icon.style.transform === 'rotate(180deg)') {
+            icon.style.transform = 'rotate(0deg)';
+          } else {
+            icon.style.transform = 'rotate(180deg)';
+          }
+        }
+      }
+
+        let mybutton = document.getElementById("btn-back-to-top");
+        window.onscroll = function () {
+          scrollFunction();
+        };
+
+        function scrollFunction() {
+          if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+          ) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        mybutton.addEventListener("click", backToTop);
+        function backToTop() {
+          document.documentElement.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        }
+
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click", function() {
+            const targetPosition = document.getElementById("tech").offsetTop;
+            const duration = 2000; 
+            scrollToSmoothly(targetPosition, duration);
+        });
+
+        function scrollToSmoothly(targetPosition, duration) {
+            const startPosition = window.scrollY || window.pageYOffset;
+            const distance = targetPosition - startPosition;
+            const startTime = performance.now();
+
+            function step(currentTime) {
+                const elapsedTime = currentTime - startTime;
+                const scrollPosition = easeInOutCubic(elapsedTime, startPosition, distance, duration);
+                window.scrollTo(0, scrollPosition);
+
+                if (elapsedTime < duration) {
+                    requestAnimationFrame(step);
+                }
+            }
+
+          function easeInOutCubic(t, b, c, d) {
+              t /= d / 2;
+              if (t < 1) return (c / 2) * t * t * t + b;
+              t -= 2;
+              return (c / 2) * (t * t * t + 2) + b;
+          }
+            requestAnimationFrame(step);
+        }
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
 </html>

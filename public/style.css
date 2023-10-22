@@ -1,96 +1,286 @@
-* {
-    width : 100%;
+*{
+    font-family: 'Montserrat', sans-serif;
+}
 
+body {
+    overflow-x: hidden;
 }
 
 .vertical-line {
-    width: 4px; 
-    height: 12%;
-    background-color: #6FCF97; 
-    position: absolute;
-    left: 40%; 
-    transform: translateX(-50%); 
+    margin-top: -15px;
+    height: 85px; 
+    border-left: 3px solid #4F6458; 
+    margin-right: 20px;
 }
 
-@media (max-width: 768px) {
+.horizontal-line {
+    margin-top: -2%;
+    width: 48.5%;
+    height: 4px;
+    background-color: #4F6458; 
+}
+.horizontal {
+    width: 95%;
+    height: 4px;
+    background-color: #4F6458; 
+}
+
+#btn-back-to-top {
+    width: 5%;
+    height: 10%;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 99;
+    background-color: #CCD5CD;
+}
+
+#btn-back-to-top i {
+    margin-left: -9px;
+    color: #000;
+}
+
+.navbar-brand {
+    font: 32px Viga;
+    color: #4F6458;
+}
+
+.navbar-brand1 {
+    font: 23px Viga;
+}
+
+.button-news1 {
+    font: 23px Viga;
+} 
+
+.jumbotron {
+    background: url(../public/img/a.png);
+    background-size: cover;
+    z-index: -1;
+}
+
+.jumbotron::after {
+    content: '';
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    bottom: 0;
+}
+
+.jumbotron .container {
+    color: #000;
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron .display-4 {
+    color: #3A4C3F;
+    font-weight: 700;
+    font-size: 3.5em;
+    margin-top: 110px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+}
+.jumbotron .display-4 span {
+    font-weight: 500;
+}
+
+@media (min-width: 1200px) {
+    .tech {
+      margin-left: 6%;
+    }
+}
+
+@media (max-width: 568px) {
+    .horizontal-line {
+        width: 97.5%;
+    }
     .vertical-line {
         display: none; 
     }
-}
-
-.button-container {
-    width: 208px;
-    height: 50px;
-    position: relative;
-}
-
-.button-background {
-    width: 208px;
-    height: 50px;
-    left: 0px;
-    top: 0px;
-    position: absolute;
-    background: #6FCF97;
-    border-radius: 5px;
-}
-
-.button-text {
-    left: 18px;
-    top: 15px;
-    position: absolute;
-    color: white;
-    font-size: 16px;
-    font-family: Montserrat;
-    font-weight: 600;
-    word-wrap: break-word;
-}
-
-.custom-button {
-	width: 40%;
-    display: inline-block;
-    padding: 12px 24px; 
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #fff;
-    background-color: #3498db; 
-    border-radius: 50px; 
-    transition: background-color 0.3s, box-shadow 0.3s, opacity 0.3s; 
-
-    &:hover {
-        background-color: #2074a0; 
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        opacity: 0.8;
+    .tech {
+        margin-top: -4%;
+        margin-left: 3.5%;
+    }
+    .jumbotron .display-4 {
+        padding-right: 450px;
+        font-size: 3em;
+    }
+    .card-content {
+        margin-left: 0.5%;
+    }
+    .card1-event {
+        margin-top: -10%;
+    }
+    .cd {
+        margin-left: 5%;
+        display: grid;
+    }
+    .manfaat {
+        margin-left: 2%;
+    }
+    .text-content {
+        margin-top: 4%;
+        text-align: center;
     }
 }
 
-.card-style {
-	width: 370px; 
-	padding: 20px;
-    margin-left: 25px;
-	margin-top: 100px;
+@media (min-width: 768px) {
+    .horizontal {
+        display: none;
+    }
+    
 }
 
-.card:hover .card-content {
-	margin-top: 40px;
+@media (min-width: 992px) {
+    .navbar {
+        padding-top: 20px;
+        padding-right: 90px;
+    }
+    .navbar-brand, .nav-link {
+        padding-left: 60px;
+        color: #727E77;
+    }
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 0px;
+        font-family: 'Poppins', sans-serif;
+    }
+    .nav-link:hover::after,
+    .nav-link.active::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #4F6458;
+        margin: auto;
+        margin-bottom: -8px;
+        width: 50%;
+        padding-top: 5px;
+    }
+    .card-body {
+        width: 100%;
+    }
+    .card-brand1 {
+        font: 15px Viga;
+        color: #000000;
+    }
+    .jumbotron {
+        margin-top: -90px;
+        height: 640px;
+    }
+}
+
+.trns-text {
+    background: url(../public/img/pexels-photo-2749165.webp) -10px -20px no-repeat;
+    font-weight: bold;
+    text-shadow: 0 0 5px #3A4C3F, 0 0 5px #3A4C3F, 0 0 5px #3A4C3F, 0 0 5px #3A4C3F;
+    color: #fff;
+    text-transform: uppercase;
+    mix-blend-mode: overlay;
+    opacity: 60%;
+}
+
+.cad {
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    transition: 0.3s; 
+}
+
+.crd {
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    transition: 0.3s; 
+}
+
+.crd:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cad:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-style {
+    width: 370px; 
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.card1-event {
+    width: 160%; 
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card-cover {
-	width: 100%; 
-	height: 200px; 
-	position: relative; 
-	margin-top: -60px; 
-	z-index: 10; 
-	box-shadow: 0 5px 10px rgba(0, 0, 0, .5); 
-	display: flex;
+    width: 100%; 
+    height: 200px; 
+    position: relative; 
+    margin-top: -60px; 
+    z-index: 10; 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5); 
+    display: flex;
 }
 
-.card-content { 
-	height: 200px;
-	display: flex;
-	flex-direction: column;
-	margin-top: -200px;
-	position: relative;
-	overflow: hidden;
-	transition: margin-top .4s ease-out;
+.text-content {
+    font: bold;
+}
+
+.btn {
+    background-color: #4F6458;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #FFF;
+    background-color: #CCD5CD;
+}
+
+.text-content, h2, h4 {
+    color: #4F6458;
+    font-weight: bold;
+}
+
+.text-dark i.fa-caret-down {
+    transition: transform 0.3s;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer-bottom .row {
+    width: 100%;
+}
+
+.footer-bottom .col-md-7 {
+    text-align: left;
+}
+@media (max-width: 568px) {
+    .footer-bottom .col-md-7 {
+      display: none;
+    }
+    .foot {
+      margin-left: 52%;
+    }
+}
+
+.footer-bottom {
+    color: #4F6458;
+    height: 70px;
+    position: relative;
+    padding: 25px 0;
+    background: #d8e3d9;
 }
