@@ -126,7 +126,7 @@
 }
 .jumbotron {
     margin-left: 20px;
-    background: url(../public/img/pexels-photo-2749165.webp);
+    background: url(assets/img/a.png);
     background-size: cover;
     /* height: 560%; */
     position: relative;
@@ -196,7 +196,7 @@
 }
 
 .trns-text {
-    background: url(../public/img/pexels-photo-2749165.webp) -10px -20px no-repeat;
+    background: url(assets/img/pexels-photo-2749165.webp) -10px -20px no-repeat;
     background-size: cover;
     font-weight: bold;
     color: transparent; 

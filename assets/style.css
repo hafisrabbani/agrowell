@@ -56,7 +56,7 @@ body {
 } 
 
 .jumbotron {
-    background: url(../public/img/a.png);
+    background: url(../assets/img/a.png);
     background-size: cover;
     z-index: -1;
 }
@@ -172,7 +172,7 @@ body {
 }
 
 .trns-text {
-    background: url(../public/img/pexels-photo-2749165.webp) -10px -20px no-repeat;
+    background: url(assets/img/pexels-photo-2749165.webp) -10px -20px no-repeat;
     font-weight: bold;
     text-shadow: 0 0 5px #3A4C3F, 0 0 5px #3A4C3F, 0 0 5px #3A4C3F, 0 0 5px #3A4C3F;
     color: #fff;
